@@ -88,13 +88,16 @@ const CSVMerger = () => {
         accept=".csv"
         onChange={handleFileChange}
       />
+      
       <button onClick={mergeCSVFiles}>Merge CSV Files</button>
-
+      <p>Created by : Abhishek</p>
       {mergedData.length > 0 && (
         <div>
           <button onClick={downloadMergedCSV}>Download Merged CSV</button>
           <pre>{JSON.stringify(mergedData, null, 2)}</pre>
+         
         </div>
+        
       )}
     </div>
   );
